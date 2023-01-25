@@ -1,0 +1,55 @@
+/*:root{
+    /* Guardar Variables de colores*/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+header nav{
+    border: solid 1px black;
+    
+}
+
+nav{
+    text-align: center;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lateralDerecho{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header .informacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: solid 1px black;
+    align-items: center;
+}
+
+img{
+    width: 25rem;
+    height: 20rem;
+}
+
+.sobreMi{
+    border: solid 1px black;
+    text-align: center;
+    height: 4rem;
+}
