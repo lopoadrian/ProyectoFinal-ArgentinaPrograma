@@ -20,6 +20,10 @@ header nav{
     background-color: var(--marron-oscuro);
     font-weight: 700;
     color:var(--beige);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 
 nav{
@@ -126,6 +130,92 @@ img{
 
 }
 
-li span{
+span{
     font-weight: bold;
+    color: var(--marron-oscuro);
+}
+
+.experiencia{
+    background-color: var(--beige-oscuro);
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 20rem 2rem 20rem;
+    color: var(--marron-oscuro);
+}
+
+.experiencia h2{
+    text-align: center;
+    margin: 1rem 0;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+.experiencia .empleoUno, .empleoDos, .empleoTres, .empleoCuatro{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.experiencia span{
+    font-weight: bold;
+}
+
+.experiencia ul{
+    padding: 1rem;
+}
+
+.habilidades{
+    background-color: var(--beige-oscuro);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0rem 20rem 2rem 20rem;
+    color: var(--marron-oscuro);
+}
+.habilidades h2{
+    text-align: center;
+    margin: 1rem 0;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+.aptitudes{
+    font-size: 1.5rem;
+}
+
+.habilidades h3{
+    text-align: center;
+    margin: 1rem 0;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+.idioma{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.pie{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: var(--marron-oscuro);
+    color: var(--beige);
+}
+
+.contactos h2, .redes h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.contactos ul {
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.redes ul {
+    list-style: none;
+    font-size: 1.5rem;
+    
 }
