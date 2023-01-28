@@ -1,5 +1,10 @@
-/*:root{
-    /* Guardar Variables de colores*/
+:root{
+    --marron-oscuro:#1A120B;
+    --marron:#3C2A21;
+    --beige:#D5CEA3;
+    --crema:#E5E5CB;
+    --beige-oscuro: #FAD6A5;
+}
 
 *{
     box-sizing: border-box;
@@ -12,7 +17,9 @@
 
 header nav{
     border: solid 1px black;
-    
+    background-color: var(--marron-oscuro);
+    font-weight: 700;
+    color:var(--beige);
 }
 
 nav{
@@ -24,6 +31,10 @@ nav{
     align-items: center;
 }
 
+.lateralIzquierdo{
+    font-size: 2rem;
+}
+
 .lateralDerecho{
     width: 50%;
     display: flex;
@@ -32,24 +43,89 @@ nav{
 
 a{
     text-decoration: none;
-    color: black;
+    color:var(--beige);
 }
 
 header .informacion{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     border: solid 1px black;
     align-items: center;
+    background-color: var(--marron);
+    padding: 1rem 0;
+}
+
+
+.informacion-texto{
+    color: var(--beige);
+    margin-right: 25rem;
+    
+} 
+
+.informacion-texto h1{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.informacion-texto p{
+    font-size: 2rem;
+    font-weight: 400;
+    
 }
 
 img{
     width: 25rem;
     height: 20rem;
+    margin-left: 1rem;
 }
 
 .sobreMi{
-    border: solid 1px black;
+    
     text-align: center;
-    height: 4rem;
+    background-color: var(--beige);
+    
+}
+.sobreMi h2{
+    padding: 2rem 0;
+    font-weight: bold;
+    text-decoration: underline;
+    color: var(--marron-oscuro);
+    font-size: 2rem;
+}
+
+.sobreMi p{
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 0rem 20rem 2rem 20rem;
+    color: var(--marron);
+}
+
+
+.informacionP{
+    text-align: center;
+    padding: 1rem 0;
+    background-color: var(--beige);
+    
+}
+
+.informacionP h2{
+    margin-bottom: 2rem;
+    text-decoration: underline;
+    font-size: 2rem;
+    color: var(--marron-oscuro);
+}
+
+.informacionP ul li{
+    color: var(--marron-oscuro);
+    font-size: 1.5rem;
+    text-align: justify;
+    padding-left: 20rem;
+    margin-bottom:1rem ;
+
+}
+
+li span{
+    font-weight: bold;
 }
