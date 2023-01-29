@@ -7,16 +7,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d63f9b83c1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href=".\Recursos\normalize.css">
     <link rel="stylesheet" href=".\Recursos\estilos.css">
     <title>CV Online</title>
+    
 
 </head>
 <body>
     <header>
         <nav>
             <div class="lateralIzquierdo">
-                <div>CV Online</div>
+                <a href="#">CV Online</a>
             </div>
             <div class="lateralDerecho">
                 <a href="#sobreMi">Sobre Mi</a> 
@@ -42,15 +44,18 @@
 
         <div class="informacionP" id="informacionp">
             <h2>Informacion Personal</h2>
-            <ul>
-                <li><span>Edad:</span> 35 Años</li>
-                <li><span> Nacionalidad:</span> Argentina</li>
-                <li><span>Provincia:</span> Buenos Aires</li>
-                <li><span>Localidad:</span> Ciudad Autónoma de Buenos Aires</li>
-                <li><span>Direccion:</span> Av. Libertador 5236</li>
-                <li><span>Fecha de nacimiento:</span> 1985</li>
-                <li><span>Estado Civil:</span> Soltero</li>
-            </ul>
+            <div class="informacion-Imagen">
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> <span>Edad:</span> 35 Años</li>
+                    <li><i class="fa-solid fa-check"></i> <span> Nacionalidad:</span> Argentina</li>
+                    <li><i class="fa-solid fa-check"></i> <span>Provincia:</span> Buenos Aires</li>
+                    <li><i class="fa-solid fa-check"></i> <span>Localidad:</span> Ciudad Autónoma de Buenos Aires</li>
+                    <li><i class="fa-solid fa-check"></i> <span>Direccion:</span> Av. Libertador 5236</li>
+                    <li><i class="fa-solid fa-check"></i> <span>Fecha de nacimiento:</span> 1985</li>
+                    <li><i class="fa-solid fa-check"></i> <span>Estado Civil:</span> Soltero</li>
+                </ul>
+                <img src="/Recursos/Img/imagen02.webp" alt="">
+            </div>
         </div>
 
         <div class="experiencia" id="experiencia">
@@ -134,28 +139,53 @@
                 <ul>
                     <li><span>Español:</span> lengua nativa.</li>
                     <li><span>Inglés:</span> competencia profesional
-                        avanzada</li>
+                        avanzada.</li>
                 </ul>
             </div>
         </div>
+        <div class="contactos" id="contactos">
+            <div class="contactos-flex">
+                <div class="contacto">
+                    <h2>Contactos</h2>
+                    <ul>    
+                        <li><i class="fa-solid fa-phone-volume"></i> <span>Telefono:</span> 54(9301)315-61-11</li>
+                        <li><i class="fa-sharp fa-solid fa-envelope"></i> <span>Email:</span> fmarshall@gmail.com</li>
+                    </ul>            
+                </div>
+            
+                <div class="redes" id="redes">
+                    <h2>Redes Sociales</h2>
+                    <ul>
+                        <li><i class="fa-brands fa-linkedin"></i> <span>Linkedin:</span><a href="#redes"> https://www.linkedin.com/in/fmarshall/</a></li>
+                        <li><i class="fa-brands fa-square-facebook"></i> <span>Facebook:</span><a href="#redes"> https://www.Facebook.com/in/fmarshall/</a></li>
+                        <li><i class="fa-brands fa-square-twitter"></i> <span>Twitter:</span><a href="#redes"> https://www.Twitter.com/in/fmarshall/</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="formulario-contacto">
+                <h2>Puedes contactarte completando el siguiente formulario </h2>
+                <form action="" class="formulario">
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" type="text" placeholder="Tu Nombre">
+        
+                        <label for="email">Email</label>
+                        <input id="email" type="email" placeholder="Tu Email">
+        
+                        <label for="telefono">Telefono</label>
+                        <input id="telefono" type="tel" placeholder="Tu Telefono">
+        
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="" id="mensaje" ></textarea>
+
+                        <input type="submit" class="enviar" value="Enviar">
+                </form>
+            </div>
+            
+        </div>
     </section>  
     <footer class="pie">
-        <div class="contactos" id="contactos">
-            <h2>Contactos</h2>
-            <ul>
-                <li><span>Telefono:</span> 54(9301)315-61-11</li>
-                <li><span>Email:</span> fmarshall@gmail.com</li>
-            </ul>            
-        </div>
-
-        <div class="redes" id="redes">
-            <h2>Redes Sociales</h2>
-            <ul>
-                <li><span>Linkedin:</span><a href="#redes"> https://www.linkedin.com/in/fmarshall/</a></li>
-                <li><span>Facebook:</span><a href="#redes"> https://www.Facebook.com/in/fmarshall/</a></li>
-                <li><span>Twitter:</span><a href="#redes"> https://www.Twitter.com/in/fmarshall/</a></li>
-            </ul>
-        </div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis inventore impedit magnam nemo molestiae earum id alias quidem magni amet placeat harum facere nulla, autem vel laudantium optio. Nisi, facilis?</p>
     </footer>
    
    

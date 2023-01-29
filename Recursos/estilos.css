@@ -1,9 +1,11 @@
 :root{
-    --marron-oscuro:#1A120B;
-    --marron:#3C2A21;
-    --beige:#D5CEA3;
-    --crema:#E5E5CB;
-    --beige-oscuro: #FAD6A5;
+    --oscuroM:#120907;
+    --oscuro:#1a1b32;
+    --normal:#495078;
+    --claro:#7e8bcb;
+    --claroM: #b2bdeb;
+    
+    
 }
 
 *{
@@ -17,9 +19,9 @@
 
 header nav{
     border: solid 1px black;
-    background-color: var(--marron-oscuro);
+    background-color: var(--oscuroM);
     font-weight: 700;
-    color:var(--beige);
+    color:var(--claroM);
     position: fixed;
     left: 0;
     top: 0;
@@ -43,12 +45,26 @@ nav{
     width: 50%;
     display: flex;
     justify-content: space-between;
+    font-size: 1.2rem;
+    
 }
 
-a{
+
+
+
+
+nav a{
     text-decoration: none;
-    color:var(--beige);
+    color:var(--claro);
+    border-bottom:2px solid var(--claro);
 }
+
+a:active{
+    color: var(--claroM);
+    
+    
+}
+
 
 header .informacion{
     display: flex;
@@ -56,13 +72,13 @@ header .informacion{
     justify-content: space-between;
     border: solid 1px black;
     align-items: center;
-    background-color: var(--marron);
-    padding: 1rem 0;
+    background-color: var(--oscuro);
+    padding: 2rem 0;
 }
 
 
 .informacion-texto{
-    color: var(--beige);
+    color: var(--claroM);
     margin-right: 25rem;
     
 } 
@@ -79,73 +95,88 @@ header .informacion{
     
 }
 
-img{
+.informacion img{
     width: 25rem;
     height: 20rem;
     margin-left: 1rem;
+    margin-top: 3rem;
 }
 
 .sobreMi{
-    
+    padding: 5rem;
     text-align: center;
-    background-color: var(--beige);
+    background-color: var(--claro);
     
 }
 .sobreMi h2{
-    padding: 2rem 0;
+    margin-bottom: 1rem;
     font-weight: bold;
     text-decoration: underline;
-    color: var(--marron-oscuro);
+    color: var(--oscuroM);
     font-size: 2rem;
 }
+
 
 .sobreMi p{
     font-size: 1.5rem;
     text-align: justify;
-    padding: 0rem 20rem 2rem 20rem;
+    padding: 0rem 20rem 0rem 20rem;
     color: var(--marron);
 }
 
 
 .informacionP{
     text-align: center;
-    padding: 1rem 0;
-    background-color: var(--beige);
-    
+    padding: 5rem 0;
+    background-color: var(--oscuro);
+    color: var(--claroM);
+       
+}
+
+.informacion-Imagen{
+    display: flex;
+    padding: 5rem 0;
+    justify-content: space-between;
+}
+
+.informacion-Imagen img{
+    margin-right: 3rem;
 }
 
 .informacionP h2{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     text-decoration: underline;
     font-size: 2rem;
-    color: var(--marron-oscuro);
+   
 }
 
+
 .informacionP ul li{
-    color: var(--marron-oscuro);
     font-size: 1.5rem;
     text-align: justify;
-    padding-left: 20rem;
+    margin-left: 20rem;
     margin-bottom:1rem ;
+    list-style:none;
 
 }
 
 span{
     font-weight: bold;
-    color: var(--marron-oscuro);
+    
 }
 
 .experiencia{
-    background-color: var(--beige-oscuro);
+    background-color: var(--claro);
+    color: var(--oscuroM);
     display: flex;
     flex-direction: column;
-    padding: 0rem 20rem 2rem 20rem;
-    color: var(--marron-oscuro);
+    padding: 5rem 20rem;
+    
 }
 
 .experiencia h2{
+    margin-bottom: 1rem;
     text-align: center;
-    margin: 1rem 0;
     text-decoration: underline;
     font-size: 2rem;
 }
@@ -164,12 +195,12 @@ span{
 }
 
 .habilidades{
-    background-color: var(--beige-oscuro);
+    background-color: var(--oscuro);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 0rem 20rem 2rem 20rem;
-    color: var(--marron-oscuro);
+    padding: 5rem 20rem;
+    color: var(--claroM);
 }
 .habilidades h2{
     text-align: center;
@@ -194,12 +225,15 @@ span{
     margin-bottom: 1rem;
 }
 
-.pie{
+.contactos{
+    padding: 5rem;
+    background-color: var(--claro);
+    color: var(--oscuroM);
+}
+
+.contactos-flex{
     display: flex;
     justify-content: space-around;
-    padding: 2rem;
-    background-color: var(--marron-oscuro);
-    color: var(--beige);
 }
 
 .contactos h2, .redes h2{
@@ -210,12 +244,74 @@ span{
 
 .contactos ul {
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 1rem 0;
 }
 
 .redes ul {
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     
+}
+
+.redes a{
+    text-decoration: none;
+    color:var(--oscuroM);
+}
+
+.formulario-contacto h2{
+    text-align: left;
+    margin: 3rem 10rem 0;
+    text-decoration: none;
+}
+form{
+    border: 2px solid var(--normal);
+    margin: 2rem 10rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--claroM);
+
+}
+
+form label{
+    font-weight: bold;
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+form input{
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: 3px solid var(--normal);
+}
+
+
+form textarea{
+    width: 100%;
+    height: 10rem;
+    border-radius: 0.5rem;
+    resize: none;
+    border: 3px solid var(--normal);
+}
+
+form .enviar{
+    border-radius: 0;
+    margin-top: 1rem;
+    width: 50%;
+    margin-left: 20rem;
+}
+
+.enviar:hover{
+    background-color: var(--oscuro);
+    color: white;
+    font-weight: bold;
+    
+}
+
+footer{
+    background-color: var(--oscuroM);
+    height: 5rem;
+    color: var(--claroM);
 }
