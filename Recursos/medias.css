@@ -1,0 +1,99 @@
+@media (max-width:1279px){
+  .lateralDerecho{
+    font-size: 1rem;
+    width: 70%;
+  }
+
+  .informacion img{
+    width: 40%;
+    height: 40%;
+  }
+  .informacion-texto{
+    margin-left: 1rem;
+  }
+  .informacion-texto h1{
+    font-size: 3rem;
+  }
+  .informacion-texto p{
+    font-size: 1.5rem;
+  }
+  .sobreMi{
+    padding-bottom: 8rem;
+  }
+  .sobreMi p{
+    padding: 0;
+  }
+
+  .informacion-imagen{
+    justify-content: left;
+  }
+
+  .informacion-imagen ul li{
+    font-size: 2.2vw;
+    margin-left: 0;
+  }
+
+  .informacion-imagen img{
+    width: 50%;
+    height: 20%;
+    margin-left: 1rem;
+
+  }
+
+  .experiencia{
+    padding: 5rem 2rem;
+  }
+
+  .habilidades{
+    padding: 5rem 2rem;
+    gap: 3rem;
+  }
+
+  .contactos-flex{
+    gap: 3rem;
+  }
+  .formulario-contacto h2{
+    margin:0;
+  }
+
+  form{
+    margin: 2rem 0;
+  }
+
+ }
+
+@media (max-width: 768px){
+    .lateralIzquierdo{
+        font-size: 2.5vw;
+    }
+    .lateralDerecho{
+        font-size: 2.5vw;
+        gap: 1rem;
+      }
+    .formulario-contacto{
+        margin-top: 2rem
+    }
+
+    .informacion-texto h1{
+        font-size: 5vw;
+    }
+
+    .informacion-texto p{
+        font-size: 3vw;
+        
+    }
+ }
+ 
+
+@media (min-width:1280px){
+ .informacion-imagen ul li{
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .informacion-imagen img{
+   margin-right: 5rem;
+  }
+
+  
+}

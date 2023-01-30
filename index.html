@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/d63f9b83c1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href=".\Recursos\normalize.css">
     <link rel="stylesheet" href=".\Recursos\estilos.css">
+    <link rel="stylesheet" href=".\Recursos\medias.css">
     <title>CV Online</title>
     
 
@@ -21,11 +22,11 @@
                 <a href="#">CV Online</a>
             </div>
             <div class="lateralDerecho">
-                <a href="#sobreMi">Sobre Mi</a> 
-                <a href="#informacionp">Informacion Personal</a> 
-                <a href="#experiencia">Experiencia</a> 
-                <a href="#habilidades">Habilidades</a> 
-                <a href="#contactos">Contactos</a> 
+                <a class="aSobreMi" href="#sobreMi">Sobre Mi</a> 
+                <a class="aInformacionP "href="#informacionp">Informacion Personal</a> 
+                <a class="aExperiencia" href="#experiencia">Experiencia</a> 
+                <a class="aHabilidades" href="#habilidades">Habilidades</a> 
+                <a class="aContactos" href="#contactos">Contactos</a> 
             </div>
         </nav>
         <div class="informacion">
@@ -44,12 +45,12 @@
 
         <div class="informacionP" id="informacionp">
             <h2>Informacion Personal</h2>
-            <div class="informacion-Imagen">
+            <div class="informacion-imagen">
                 <ul>
                     <li><i class="fa-solid fa-check"></i> <span>Edad:</span> 35 Años</li>
                     <li><i class="fa-solid fa-check"></i> <span> Nacionalidad:</span> Argentina</li>
                     <li><i class="fa-solid fa-check"></i> <span>Provincia:</span> Buenos Aires</li>
-                    <li><i class="fa-solid fa-check"></i> <span>Localidad:</span> Ciudad Autónoma de Buenos Aires</li>
+                    <li><i class="fa-solid fa-check"></i> <span>Localidad:</span> CABA</li>
                     <li><i class="fa-solid fa-check"></i> <span>Direccion:</span> Av. Libertador 5236</li>
                     <li><i class="fa-solid fa-check"></i> <span>Fecha de nacimiento:</span> 1985</li>
                     <li><i class="fa-solid fa-check"></i> <span>Estado Civil:</span> Soltero</li>
@@ -165,18 +166,24 @@
 
             <div class="formulario-contacto">
                 <h2>Puedes contactarte completando el siguiente formulario </h2>
-                <form action="" class="formulario">
+                <form action="#" class="formulario" id="formulario">
                         <label for="nombre">Nombre</label>
-                        <input id="nombre" type="text" placeholder="Tu Nombre">
+                        <input id="nombre" type="text" placeholder="Tu Nombre" required >
+
+                        <label for="apellido">Apellido</label>
+                        <input id="apellido" type="text" placeholder="Tu Apellido" required>
+                       
+                        <label for="empresa">Empresa</label>
+                        <input id="empresa" type="text" placeholder="Tu Empresa" required>
         
                         <label for="email">Email</label>
-                        <input id="email" type="email" placeholder="Tu Email">
+                        <input id="email" type="email" placeholder="Tu Email - Ej: correo@correo.com" required>
         
                         <label for="telefono">Telefono</label>
-                        <input id="telefono" type="tel" placeholder="Tu Telefono">
+                        <input id="telefono" type="tel" placeholder="Tu Telefono"  required>
         
-                        <label for="mensaje">Mensaje</label>
-                        <textarea name="" id="mensaje" ></textarea>
+                        <label for="mensaje"  >Mensaje</label>
+                        <textarea name="" id="mensaje" placeholder="Escribe aqui" required></textarea>
 
                         <input type="submit" class="enviar" value="Enviar">
                 </form>
@@ -185,9 +192,9 @@
         </div>
     </section>  
     <footer class="pie">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis inventore impedit magnam nemo molestiae earum id alias quidem magni amet placeat harum facere nulla, autem vel laudantium optio. Nisi, facilis?</p>
+        <p>2023  &copy; Desarrollado por Adrián Reggiani</p>
     </footer>
    
-   
+   <script src="funciones.js" type="text/javascript"></script>
 </body>
 </html>

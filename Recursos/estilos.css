@@ -13,6 +13,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+
 }
 
 
@@ -79,7 +80,7 @@ header .informacion{
 
 .informacion-texto{
     color: var(--claroM);
-    margin-right: 25rem;
+    margin:0  auto;
     
 } 
 
@@ -103,7 +104,7 @@ header .informacion{
 }
 
 .sobreMi{
-    padding: 5rem;
+    padding: 5rem 0;
     text-align: center;
     background-color: var(--claro);
     
@@ -133,7 +134,7 @@ header .informacion{
        
 }
 
-.informacion-Imagen{
+.informacion-imagen{
     display: flex;
     padding: 5rem 0;
     justify-content: space-between;
@@ -154,10 +155,13 @@ header .informacion{
 .informacionP ul li{
     font-size: 1.5rem;
     text-align: justify;
-    margin-left: 20rem;
     margin-bottom:1rem ;
     list-style:none;
 
+}
+
+.informacionP img{
+    max-width: 600px;
 }
 
 span{
@@ -170,7 +174,7 @@ span{
     color: var(--oscuroM);
     display: flex;
     flex-direction: column;
-    padding: 5rem 20rem;
+    padding: 5rem 10rem;
     
 }
 
@@ -199,7 +203,8 @@ span{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 5rem 20rem;
+    gap: 3rem;
+    padding: 5rem 0;
     color: var(--claroM);
 }
 .habilidades h2{
@@ -294,13 +299,14 @@ form textarea{
     border-radius: 0.5rem;
     resize: none;
     border: 3px solid var(--normal);
+    padding: 0.5rem 1rem;
 }
 
 form .enviar{
     border-radius: 0;
     margin-top: 1rem;
-    width: 50%;
-    margin-left: 20rem;
+    width: 100%;
+    
 }
 
 .enviar:hover{
@@ -314,4 +320,11 @@ footer{
     background-color: var(--oscuroM);
     height: 5rem;
     color: var(--claroM);
+    text-align: center;
+    padding: 2rem;
+}
+
+
+.activo{
+    color: red;
 }
