@@ -22,6 +22,7 @@
   }
   .sobreMi p{
     padding: 0;
+    margin: 0 1rem;
   }
 
   .informacion-imagen{
@@ -29,7 +30,7 @@
   }
 
   .informacion-imagen ul li{
-    font-size: 2.2vw;
+    font-size: 3vw;
     margin-left: 0;
   }
 
@@ -51,6 +52,7 @@
 
   .contactos-flex{
     gap: 3rem;
+    margin: 0 1rem;
   }
   .formulario-contacto h2{
     margin:0;
@@ -82,10 +84,18 @@
         font-size: 3vw;
         
     }
+
+    
+    .contactos ul{
+      font-size: 3vw;
+      margin: 0 auto;
+    }
  }
  
 
 @media (min-width:1280px){
+
+
  .informacion-imagen ul li{
     margin-left: 5vw;
     margin-right: 5vw;

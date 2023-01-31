@@ -1,69 +1,28 @@
 const form = document.getElementById("formulario")
-
-// Secciones
-const sobreMi = document.querySelector('.sobreMi');
-const informacionP = document.querySelector('.informacionP');
-const experiencia = document.querySelector('.experiencia');
-const habilidades = document.querySelector('.habilidades');
-const contactos = document.querySelector('.contactos');
-const lateralDerecho = document.querySelectorAll('.lateralDerecho a');
-
-// Enlaces
-const aSobreMi = document.querySelector('.aSobreMi')
-const aInformacionP = document.querySelector('.aInformacionP')
-const aExperiencia = document.querySelector('.aExperiencia')
-const aHabilidades = document.querySelector('.aHabilidades')
-const aContactos = document.querySelector('.aContactos')
+const fNombre = document.getElementById("nombre")
+const fApellido = document.getElementById("apellido")
+const fEmpresa = document.getElementById("empresa")
+const fEmail = document.getElementById("email")
+const fTelefono = document.getElementById("telefono")
+const fMensaje = document.getElementById("mensaje")
 
 
 
 form.addEventListener("submit", function(e){
     e.preventDefault();
+    console.log(fNombre.value)
+    confirm(`Estos son tus datos: 
+    Nombre: ${fNombre.value} 
+    Apellido: ${fApellido.value}?
+    Empresa: ${fEmpresa.value}
+    Email: ${fEmail.value}
+    Telefono: ${fTelefono.value}
+    Mensaje: ${fMensaje.value}
+    
+    Si los datos son correctos, presione ACEPTAR
+    `)
     alert('Su solicitud ha sido enviada. Nos contactaremos con usted a la brevedad.');
     form.reset();
 }
 )
 
-
-window.addEventListener('scroll',function(){
-    console.log(informacionP.getBoundingClientRect())
-   
-  if(sobreMi.getBoundingClientRect().top <= 0 && sobreMi.getBoundingClientRect().top > -400  ){
-    aSobreMi.classList.add("activo")
-  }else{
-    aSobreMi.classList.remove("activo")
-  }
-})
-
-
-window.addEventListener('scroll',function(){
-    if(informacionP.getBoundingClientRect().top <= 0 && informacionP.getBoundingClientRect().top > -450 ){
-        aInformacionP.classList.add("activo")
-    }else{
-        aInformacionP.classList.remove("activo")
-    }
-})
-
-window.addEventListener('scroll',function(){
-  if(experiencia.getBoundingClientRect().top < 0){
-    aExperiencia.classList.add("activo")
-  }else{
-    aExperiencia.classList.remove("activo")
-  }
-})
-
-window.addEventListener('scroll',function(){
-  if(habilidades.getBoundingClientRect().top < 0){
-    aHabilidades.classList.add("activo")
-  }else{
-    aHabilidades.classList.remove("activo")
-  }
-})
-
-window.addEventListener('scroll',function(){
-  if(contactos.getBoundingClientRect().top < 0){
-    aContactos.classList.add("activo")
-  }else{
-    aContactos.classList.remove("activo")
-  }
-})

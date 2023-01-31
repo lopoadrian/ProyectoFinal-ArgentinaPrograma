@@ -13,10 +13,18 @@
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    
+}
 
+html{
+    scroll-behavior: smooth;
 }
 
 
+span{
+    font-weight: bold;
+    
+}
 
 header nav{
     border: solid 1px black;
@@ -121,7 +129,7 @@ header .informacion{
 .sobreMi p{
     font-size: 1.5rem;
     text-align: justify;
-    padding: 0rem 20rem 0rem 20rem;
+    padding: 0 5rem;
     color: var(--marron);
 }
 
@@ -164,10 +172,6 @@ header .informacion{
     max-width: 600px;
 }
 
-span{
-    font-weight: bold;
-    
-}
 
 .experiencia{
     background-color: var(--claro);
@@ -325,6 +329,3 @@ footer{
 }
 
 
-.activo{
-    color: red;
-}
