@@ -91,6 +91,17 @@
       margin: 0 auto;
     }
  }
+
+ @media (max-width:480px) {
+  .contactos{
+    padding: 5rem 0;
+  }
+
+  .contactos-flex{
+    gap: 1rem;
+  }
+  
+ }
  
 
 @media (min-width:1280px){
